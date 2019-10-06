@@ -1,0 +1,40 @@
+/* roboto-mono-regular - latin */
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/roboto-mono-v5-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Mono'), local('RobotoMono-Regular'),
+       url('/assets/fonts/roboto-mono-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/roboto-mono-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/roboto-mono-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/roboto-mono-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/roboto-mono-v5-latin-regular.svg#RobotoMono') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Sanchez';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/sanchez-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Sanchez'), local('Sanchez-Regular'),
+       url('/assets/fonts/sanchez-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sanchez-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sanchez-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/sanchez-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/sanchez-v5-latin-regular.svg#Sanchez') format('svg'); /* Legacy iOS */
+}
+
+/* raleway-regular - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Raleway'), local('Raleway-Regular'),
+       url('/assets/fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}

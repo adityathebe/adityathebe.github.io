@@ -1,0 +1,23 @@
+- title: Evolution Simulator
+  description: Evolution simulator where a creature learns to walk.
+  source_code: https://github.com/adityathebe/brick-game-neuroevolution
+  demo: https://adityathebe.github.io/brick-game-neuroevolution/
+  tags: [GeneticAlgorithm, MachineLearning, NeuroEvolution]
+
+- title: BotLimbu
+  description: A utility Messenger Bot
+  source_code: https://www.github.com/adityathebe/yts/
+  demo: https://m.me/botlimbu
+  tags: [Bot]
+
+- title: Two Cars
+  description: Two cars game implemented in browser
+  source_code: https://www.github.com/adityathebe/two-cars/
+  demo: https://adityathebe.github.io/two-cars
+  tags: [Game]
+
+- title: Falling Walls
+  description: A simple game where an AI learns to avoid falling walls.
+  source_code: https://www.github.com/adityathebe/yts/
+  demo: https://m.me/botlimbu
+  tags: [GeneticAlgorithm, MachineLearning, NeuroEvolution]

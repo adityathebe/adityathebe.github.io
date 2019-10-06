@@ -1,0 +1,62 @@
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="footer-col-wrapper">
+            <div class="footer-col footer-col-1">
+                <ul class="contact-list">
+                    <li>
+                        {% if site.author %}
+                            {{ site.author | escape }}
+                        {% else %}
+                            {{ site.title | escape }}
+                        {% endif %}
+                    </li>
+                    {% if site.email %}
+                        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+
+            <div class="footer-col footer-col-2">
+                <ul class="social-media-list">
+                    {% if site.github_username %}
+                    <li>
+                        {% include icon-github.html username=site.github_username %}
+                    </li>
+                    {% endif %}
+
+                    {% if site.twitter_username %}
+                    <li>
+                        {% include icon-twitter.html username=site.twitter_username %}
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+
+            <div class="footer-col footer-col-3">
+                {{ site.description | escape }}<br>
+                subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
+            </div>
+        </div>
+
+        <div class="footer-baseline">
+            <p>© 2018 Aditya Thebe </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    {% include js/typed.min.js %}
+    {% include js/app.js %}
+</script>
+
+{% if jekyll.environment == "production"  %}
+    {% if page.ads != false %}
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-1454366137383962",
+                enable_page_level_ads: true
+            });
+        </script>
+    {% endif %}
+{% endif %}

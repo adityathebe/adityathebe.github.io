@@ -1,0 +1,33 @@
+- title: YTS
+  description: A VUEJS implementation of YTS Torrent Site
+  link: https://adityathebe.github.io/yts/
+
+- title: Crypto Compare
+  description: A VUEJS implementation of YTS Torrent Site
+  link: https://adityathebe.github.io/cryptoCompare/
+
+- title: Sierpinski Triangle
+  description: Simulating Sierpinski Triangle (Chaos Game)
+  link: https://adityathebe.github.io/sierpinski_triangle/
+
+- title: Number System Conversion
+  description: A Website for Number System Conversion
+  link: https://adityathebe.github.io/num_conv/
+
+- title: Reddit Bot
+  description: A Streamable mirror reddit bot for Football fans
+  link: https://github.com/adityathebe/redditBot
+
+- title: Kalimati API
+  description: A NPM module for Kalimati Vegetable Rates
+  link: https://github.com/adityathebe/kalimati-rate
+
+- title: qfx-cinema
+  description: Get QFX cinema updates on your terminal
+  link: https://www.npmjs.com/package/qfx-cinema
+
+- title: Nepal Disaster Visualization
+  stack: P5.js
+  image: https://github.com/adityathebe/disaster_vis_nepal/raw/master/disaster_vis_nepal.png
+  description: A Program written with P5.JS to visualize the effect of disasters in Nepal
+  link: https://adityathebe.github.io/disaster_vis_nepal/

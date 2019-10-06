@@ -1,0 +1,36 @@
+---
+layout: default 
+--- 
+
+{% for project in site.data.projects-major %}
+<ul class="post-list">
+    <li class="post-meta">
+        <h2>{{project.title}}</h2>
+        <i>Category: {% for tag in project.tags %}
+            <span class="label label-default">{{tag}} </span>
+            {% endfor %}</i>
+        </br>
+
+        <h4>
+            <a target="_blank" href="{{project.demo}}">Demo</a>
+            <a target="_blank" href="{{project.source_code}}">Source Code</a>
+        </h4>
+
+        {{project.description}}
+    </li>
+</ul>
+{% endfor %}
+
+<hr width="90%">
+</br>
+
+<h2>Mini Projects</h2>
+{% for project in site.data.projects-mini %}
+<ul class="post-list">
+    <li class="post-meta">
+        <a target="_blank" href="{{project.link}}">
+            <h4>{{project.title}} - {{project.description}}</h4>
+        </a>
+    </li>
+</ul>
+{% endfor %}

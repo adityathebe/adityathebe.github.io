@@ -1,0 +1,21 @@
+# Site Settings
+title: Aditya Thebe Limbu
+email: contact@adityathebe.com
+description: Computer Science Undergraduate 
+baseurl: ""
+url: "https://www.adityathebe.com"
+twitter_username: adityathebe
+github_username:  adityathebe
+author: Aditya Thebe
+disqus: aditya-thebe
+comments: true
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+permalink: /blog/:title

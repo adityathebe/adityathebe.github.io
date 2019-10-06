@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div class="post">
+    <header class="post-header">
+        <h1>{{ page.title }}</h1>
+
+        <span>
+            <svg id="i-clock" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <circle cx="16" cy="16" r="14" />
+                <path d="M16 8 L16 16 20 20" />
+            </svg>
+
+            {% assign words = page.content | number_of_words %}
+            {% if words < 180 %}
+                1 minute read.
+            {% elsif words < 360 %}
+                2 minutes read.
+            {% else %}
+                {{ words | divided_by:180 }} minutes read
+            {% endif %}
+        </span>
+    </header>
+
+    <article class="post-content">
+        {% if page.imgsrc %}
+            <img src = "{{ page.imgsrc }}" class="img-rounded" >
+        {% endif %}
+        
+        {{ content }}
+    </article>
+
+    {% include disqus_comments.html %}
+</div>

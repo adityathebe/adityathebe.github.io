@@ -1,0 +1,70 @@
+<head>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="generator" content="Jekyll" />
+  <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
+
+  <!-- Twitter MetaData -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@adityathebe">
+  
+  <!-- facebook Open Graph Metadatas -->
+  <meta property="og:site_name" content="{{ site.title }}" >
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="fb:app_id" content="1090463994358202" />
+
+  {% if page.title %}
+  <meta property="og:title"   content="{{ page.title }}" />
+  {% endif %}
+
+  {% if page.description %}
+    <meta property="og:description" content="{{ page.description }}" />
+  {% else %}
+    <meta content="{{ site.description }}" property="og:description" />
+  {% endif %}
+
+  {% if page.url %}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  {% endif %}
+
+  {% if page.date %}
+    <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+  {% endif %}
+
+  {% if page.image %}
+    <meta content="{{ site.url }}{{ page.image  }}" property="og:image">
+  {% endif %}
+
+  {% if page.categories %}
+    {% for category in page.categories limit:1 %}
+    <meta content="{{ category }}" property="article:section">
+    {% endfor %}
+  {% endif %}
+
+  {% if page.tags %}
+    {% for tag in page.tags %}
+    <meta property="article:tag" content="{{ tag }}" >
+    {% endfor %}
+  {% endif %}
+  
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} posts" />
+  <link rel="icon" type="image/png" href="{{ " /assets/images/favicon.png " }}">
+  
+  <style>
+    {% include css/index.css %}
+  </style>
+
+  {% if jekyll.environment == "production" %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46064963-9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-46064963-9');
+    </script>
+  {% endif %}
+</head>
