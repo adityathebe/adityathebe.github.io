@@ -1,5 +1,5 @@
-var typed = new Typed("#site-title", {
-    strings: ["Random Thoughts of a Programmer"],
-    typeSpeed: 40,
-    showCursor: false,
+var typed = new Typed('#site-title', {
+  strings: ['Archive of www.adityathebe.com'],
+  typeSpeed: 40,
+  showCursor: false,
 });
